@@ -10,7 +10,7 @@ class Detail extends Component {
   };
 
   componentDidMount(){
-    const id = this.props.matchparams.id)
+    const id = this.props.matchparams.id
     API.getBook(id).then(res => {
       this.setState({book: res.data})
     })
